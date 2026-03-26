@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — MLO Websites Powered by AI</title>
+  <meta name="description" content="Get in touch with MLO Websites. Questions about pricing, features, or need a consultant? We're here to help.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><div class="logo-icon">M</div>MLO<span>Websites</span></a>
+      <nav class="nav-links">
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="ai-marketing.html">AI Marketing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="get-started.html" class="btn btn-primary btn-sm">Get Started</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have questions? Need a consultant? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <div>
+          <h2 style="margin-bottom:.5rem;">Send Us a Message</h2>
+          <p class="text-light" style="margin-bottom:2rem;">Fill out the form below and we'll get back to you within one business day.</p>
+
+          <form action="https://myaieditor.com/api/form-notify" method="POST" data-ajax>
+            <div class="form-fields">
+              <input type="hidden" name="site_slug" value="mlo-websites">
+              <input type="hidden" name="form_type" value="contact">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-first">First Name *</label>
+                  <input type="text" id="c-first" name="first_name" required>
+                </div>
+                <div class="form-group">
+                  <label for="c-last">Last Name *</label>
+                  <input type="text" id="c-last" name="last_name" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-email">Email *</label>
+                  <input type="email" id="c-email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="c-phone">Phone</label>
+                  <input type="tel" id="c-phone" name="phone">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="c-subject">Subject *</label>
+                <select id="c-subject" name="subject" required>
+                  <option value="">Select a topic...</option>
+                  <option value="general">General Question</option>
+                  <option value="pricing">Pricing &amp; Plans</option>
+                  <option value="features">Features &amp; Capabilities</option>
+                  <option value="consultant">Book a Consultant ($95/hr)</option>
+                  <option value="ai-marketing">AI Marketing Tools</option>
+                  <option value="support">Existing Customer Support</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="c-message">Message *</label>
+                <textarea id="c-message" name="message" rows="5" required placeholder="Tell us how we can help..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Send Message &rarr;</button>
+            </div>
+
+            <div class="form-success">
+              <div class="checkmark">&#x2713;</div>
+              <h3>Message Sent!</h3>
+              <p class="text-light" style="margin-top:.75rem;">Thank you for reaching out. We'll get back to you within one business day.</p>
+              <a href="index.html" class="btn btn-primary" style="margin-top:1.5rem;">Back to Home</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <div class="contact-info-card" style="margin-bottom:2rem;">
+            <h3>Get in Touch</h3>
+            <div class="contact-detail">
+              <div class="icon">&#x1F4E7;</div>
+              <div>
+                <strong>Email</strong>
+                <p style="margin-bottom:0;color:var(--text-light);font-size:.9rem;">hello@mlowebsites.com</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="icon">&#x1F4DE;</div>
+              <div>
+                <strong>Phone</strong>
+                <p style="margin-bottom:0;color:var(--text-light);font-size:.9rem;">(555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="icon">&#x1F4AC;</div>
+              <div>
+                <strong>AI Support</strong>
+                <p style="margin-bottom:0;color:var(--text-light);font-size:.9rem;">Available 24/7 for existing customers via your website dashboard</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="icon">&#x1F553;</div>
+              <div>
+                <strong>Business Hours</strong>
+                <p style="margin-bottom:0;color:var(--text-light);font-size:.9rem;">Monday – Friday: 9am – 5pm EST<br>AI Support: 24/7</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Consultant Card -->
+          <div class="contact-info-card" style="border:2px solid var(--gold);">
+            <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;">
+              <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#c4963a);display:flex;align-items:center;justify-content:center;color:var(--white);font-size:1.25rem;">&#x1F464;</div>
+              <div>
+                <h3 style="margin-bottom:0;">Hire a Consultant</h3>
+                <p style="margin-bottom:0;font-size:.85rem;color:var(--gold);font-weight:600;">$95/hour</p>
+              </div>
+            </div>
+            <p style="color:var(--text-light);font-size:.9rem;">Need one-on-one human help? Our consultants can assist with:</p>
+            <ul style="margin:1rem 0;">
+              <li style="padding:.3rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">&#x2713;</span> Website strategy &amp; planning</li>
+              <li style="padding:.3rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">&#x2713;</span> Complex customizations</li>
+              <li style="padding:.3rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">&#x2713;</span> Marketing strategy</li>
+              <li style="padding:.3rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">&#x2713;</span> CRM &amp; tool integration</li>
+              <li style="padding:.3rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">&#x2713;</span> SEO deep-dives</li>
+            </ul>
+            <p style="font-size:.85rem;color:var(--text-light);">Select "Book a Consultant" in the contact form or call us directly to schedule.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-alt">
+    <div class="container text-center">
+      <h2>Quick Answers</h2>
+      <div class="faq-list" style="text-align:left;">
+        <div class="faq-item">
+          <button class="faq-question">How quickly will you respond to my inquiry?</button>
+          <div class="faq-answer"><p>We respond to all inquiries within one business day. For urgent matters, call us directly during business hours.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">I'm an existing customer — how do I get support?</button>
+          <div class="faq-answer"><p>Existing customers can use the Claude AI assistant on their website dashboard for instant help 24/7. For issues beyond AI capabilities, contact us here and we'll prioritize your request.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How do consultant sessions work?</button>
+          <div class="faq-answer"><p>Sessions are booked in 1-hour increments at $95/hr. We'll schedule a video call at your convenience. You can discuss strategy, walk through customizations, or get hands-on help with anything related to your website and online presence.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo"><div class="logo-icon">M</div>MLO<span>Websites</span></a><p>AI-powered, compliant websites built specifically for mortgage loan officers.</p></div>
+        <div class="footer-col"><h4>Product</h4><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="ai-marketing.html">AI Marketing</a><a href="how-it-works.html">How It Works</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="get-started.html">Get Started</a></div>
+        <div class="footer-col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 MLO Websites Powered by AI. All rights reserved.</p><div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

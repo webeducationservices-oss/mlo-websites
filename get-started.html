@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Started — MLO Websites Powered by AI</title>
+  <meta name="description" content="Start building your mortgage website today. Fill out our quick or detailed intake form and we'll have your compliant site live in days.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><div class="logo-icon">M</div>MLO<span>Websites</span></a>
+      <nav class="nav-links">
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="ai-marketing.html">AI Marketing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="get-started.html" class="btn btn-primary btn-sm">Get Started</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Get Started</h1>
+      <p>Choose your path — quick &amp; easy or fully customized. Either way, we'll build you a great website.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+
+      <form action="https://myaieditor.com/api/form-notify" method="POST" data-ajax>
+        <div class="form-fields">
+          <input type="hidden" name="site_slug" value="mlo-websites">
+          <input type="hidden" name="form_type" value="get-started">
+
+          <!-- TAB SWITCHER -->
+          <div class="form-tabs">
+            <button type="button" class="form-tab active" data-tab="quick-form">
+              <strong>Option 1:</strong> I'm Not Picky — Just Get It Going
+            </button>
+            <button type="button" class="form-tab" data-tab="detailed-form">
+              <strong>Option 2:</strong> Ask Me Questions — I Want It My Way
+            </button>
+          </div>
+
+          <!-- ======================================== -->
+          <!-- OPTION 1: QUICK FORM                     -->
+          <!-- ======================================== -->
+          <div id="quick-form" class="form-panel active">
+
+            <div style="background:rgba(0,180,216,.06);border:1px solid rgba(0,180,216,.2);border-radius:var(--radius);padding:1.25rem;margin-bottom:2rem;">
+              <p style="margin-bottom:0;font-size:.95rem;"><strong>The fast track.</strong> Answer just the essentials and we'll handle the rest with smart, professional defaults. You can always refine later with our AI assistant.</p>
+            </div>
+
+            <div class="form-section-title">Contact &amp; Business Information</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="q-first">First Name *</label>
+                <input type="text" id="q-first" name="first_name" required>
+              </div>
+              <div class="form-group">
+                <label for="q-last">Last Name *</label>
+                <input type="text" id="q-last" name="last_name" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="q-email">Email Address *</label>
+                <input type="email" id="q-email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="q-phone">Phone Number *</label>
+                <input type="tel" id="q-phone" name="phone" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="q-business">Business Name *</label>
+              <input type="text" id="q-business" name="business_name" required placeholder="As you want it to appear on your website">
+            </div>
+
+            <div class="form-group">
+              <label for="q-address">Business Address *</label>
+              <input type="text" id="q-address" name="business_address" required placeholder="Full address as displayed on your website">
+            </div>
+
+            <div class="form-section-title">Compliance Information</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="q-nmls">NMLS ID # *</label>
+                <input type="text" id="q-nmls" name="nmls_id" required placeholder="Your individual NMLS number">
+              </div>
+              <div class="form-group">
+                <label for="q-company-nmls">Company NMLS ID #</label>
+                <input type="text" id="q-company-nmls" name="company_nmls_id" placeholder="If different from individual">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="q-states">Licensed States *</label>
+              <input type="text" id="q-states" name="licensed_states" required placeholder="e.g., CA, TX, FL, NY">
+              <p class="hint">List all states you are licensed to operate in</p>
+            </div>
+
+            <div class="form-group">
+              <label for="q-company">Company / Employer Name *</label>
+              <input type="text" id="q-company" name="company_name" required placeholder="Your brokerage or lending company name">
+            </div>
+
+            <div class="form-section-title">Website Basics</div>
+
+            <div class="form-group">
+              <label>Do you have a domain? *</label>
+              <div class="radio-group">
+                <label><input type="radio" name="has_domain" value="yes"> Yes</label>
+                <label><input type="radio" name="has_domain" value="no"> No — help me get one</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="q-domain">Domain Name (or desired domain)</label>
+              <input type="text" id="q-domain" name="domain" placeholder="e.g., www.yourname.com">
+            </div>
+
+            <div class="form-group">
+              <label>Do you have a logo?</label>
+              <div class="radio-group">
+                <label><input type="radio" name="has_logo_q" value="yes"> Yes</label>
+                <label><input type="radio" name="has_logo_q" value="no"> No — use my name as text</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Upload your logo (if you have one)</label>
+              <div class="file-upload">
+                <input type="file" id="q-logo" name="logo" accept="image/*">
+                <label for="q-logo">Click to upload or drag &amp; drop</label>
+                <p class="file-name" style="margin-top:.5rem;font-size:.85rem;color:var(--text-light);"></p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Would you like to add AI Marketing Tools? ($39/mo)</label>
+              <div class="radio-group">
+                <label><input type="radio" name="ai_marketing_q" value="yes"> Yes, add it</label>
+                <label><input type="radio" name="ai_marketing_q" value="no"> Not right now</label>
+                <label><input type="radio" name="ai_marketing_q" value="info"> Tell me more first</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="q-anything">Anything else we should know?</label>
+              <textarea id="q-anything" name="notes" rows="3" placeholder="Optional — any special requests or details"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Submit &amp; Get Started — $450 &rarr;</button>
+            <p style="text-align:center;margin-top:.75rem;font-size:.85rem;color:var(--text-light);">We'll send you an invoice after reviewing your submission. No payment required now.</p>
+          </div>
+
+          <!-- ======================================== -->
+          <!-- OPTION 2: DETAILED FORM                  -->
+          <!-- ======================================== -->
+          <div id="detailed-form" class="form-panel">
+
+            <div style="background:rgba(212,168,67,.06);border:1px solid rgba(212,168,67,.25);border-radius:var(--radius);padding:1.25rem;margin-bottom:2rem;">
+              <p style="margin-bottom:0;font-size:.95rem;"><strong>The custom route.</strong> The more you tell us, the more personalized your website will be. Take your time — you can save and come back.</p>
+            </div>
+
+            <!-- SECTION: Contact & Business -->
+            <div class="form-section-title">Contact &amp; Business Information</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="d-first">First Name *</label>
+                <input type="text" id="d-first" name="d_first_name" required>
+              </div>
+              <div class="form-group">
+                <label for="d-last">Last Name *</label>
+                <input type="text" id="d-last" name="d_last_name" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="d-business">Business Name *</label>
+              <input type="text" id="d-business" name="d_business_name" required placeholder="As you want it to appear on your website">
+            </div>
+
+            <div class="form-group">
+              <label for="d-email">Business Email *</label>
+              <input type="email" id="d-email" name="d_email" required placeholder="As you want it displayed on your website">
+            </div>
+
+            <div class="form-group">
+              <label for="d-address">Business Address *</label>
+              <input type="text" id="d-address" name="d_address" required placeholder="As you want it displayed on your website">
+            </div>
+
+            <div class="form-group">
+              <label for="d-phone">Business Phone Number *</label>
+              <input type="tel" id="d-phone" name="d_phone" required placeholder="As you want it displayed on your website">
+            </div>
+
+            <div class="form-group">
+              <label for="d-industry">How would you describe your industry? *</label>
+              <input type="text" id="d-industry" name="d_industry" required placeholder="e.g., Residential Mortgage Lending, Mortgage Brokerage, etc.">
+            </div>
+
+            <div class="form-group">
+              <label for="d-tagline">What is your business tagline?</label>
+              <input type="text" id="d-tagline" name="d_tagline" placeholder="e.g., 'Your Home Loan Partner' or 'Making Homeownership Possible'">
+            </div>
+
+            <div class="form-group">
+              <label for="d-description">Write a short paragraph or two describing your business *</label>
+              <textarea id="d-description" name="d_description" rows="5" required placeholder="Tell us about your business, what makes you different, and what clients can expect when working with you..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="d-associations">What associations are you a member of?</label>
+              <input type="text" id="d-associations" name="d_associations" placeholder="e.g., MBA, NAMB, local Realtor associations, etc.">
+            </div>
+
+            <div class="form-group">
+              <label for="d-holidays">What holidays are you closed?</label>
+              <input type="text" id="d-holidays" name="d_holidays" placeholder="e.g., Major federal holidays, Christmas week, etc.">
+            </div>
+
+            <!-- SECTION: Compliance -->
+            <div class="form-section-title">Compliance Information</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="d-nmls">Individual NMLS ID # *</label>
+                <input type="text" id="d-nmls" name="d_nmls_id" required>
+              </div>
+              <div class="form-group">
+                <label for="d-company-nmls">Company NMLS ID #</label>
+                <input type="text" id="d-company-nmls" name="d_company_nmls_id" placeholder="If different from individual">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="d-company">Company / Employer Name *</label>
+              <input type="text" id="d-company" name="d_company_name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="d-states">Licensed States *</label>
+              <input type="text" id="d-states" name="d_licensed_states" required placeholder="List all states you are licensed in">
+            </div>
+
+            <div class="form-group">
+              <label for="d-disclosures">Additional compliance disclosures or required text</label>
+              <textarea id="d-disclosures" name="d_disclosures" rows="3" placeholder="Any specific compliance language your company or state requires on your website"></textarea>
+            </div>
+
+            <!-- SECTION: Domain & Technical -->
+            <div class="form-section-title">Domain &amp; Technical</div>
+
+            <div class="form-group">
+              <label>Do you have a domain? *</label>
+              <div class="radio-group">
+                <label><input type="radio" name="d_has_domain" value="yes"> Yes</label>
+                <label><input type="radio" name="d_has_domain" value="no"> No</label>
+                <label><input type="radio" name="d_has_domain" value="other"> Other</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="d-domain">What is your domain or desired domain?</label>
+              <input type="text" id="d-domain" name="d_domain" placeholder="e.g., www.yourname.com">
+            </div>
+
+            <div class="form-group">
+              <label>Do you have a live website currently?</label>
+              <div class="radio-group">
+                <label><input type="radio" name="d_has_site" value="yes"> Yes</label>
+                <label><input type="radio" name="d_has_site" value="no"> No</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="d-current-site">Current website URL (if applicable)</label>
+              <input type="text" id="d-current-site" name="d_current_site" placeholder="https://...">
+            </div>
+
+            <div class="form-group">
+              <label for="d-registrar">What is your registrar or desired registrar?</label>
+              <select id="d-registrar" name="d_registrar">
+                <option value="">Select...</option>
+                <option value="godaddy">GoDaddy</option>
+                <option value="namecheap">Namecheap</option>
+                <option value="google">Google Domains</option>
+                <option value="cloudflare">Cloudflare</option>
+                <option value="unknown">Unknown / Not Sure</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="d-analytics">What is your Google Analytics code?</label>
+              <input type="text" id="d-analytics" name="d_analytics" placeholder="e.g., G-XXXXXXXXXX or UA-XXXXXXX-X">
+              <p class="hint">Leave blank if you don't have one — we can help set it up</p>
+            </div>
+
+            <div class="form-group">
+              <label for="d-gmail">What Gmail account would you like us to create?</label>
+              <input type="text" id="d-gmail" name="d_gmail" placeholder="e.g., yourname.loans@gmail.com">
+            </div>
+
+            <!-- SECTION: Branding & Design -->
+            <div class="form-section-title">Branding &amp; Design Preferences</div>
+
+            <div class="form-group">
+              <label>Do you have a logo? *</label>
+              <div class="radio-group">
+                <label><input type="radio" name="d_has_logo" value="yes"> Yes</label>
+                <label><input type="radio" name="d_has_logo" value="no"> No</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Upload your logo</label>
+              <div class="file-upload">
+                <input type="file" id="d-logo" name="d_logo" accept="image/*">
+                <label for="d-logo">Click to upload or drag &amp; drop</label>
+                <p class="file-name" style="margin-top:.5rem;font-size:.85rem;color:var(--text-light);"></p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="d-colors">What is your hex code color palette?</label>
+              <input type="text" id="d-colors" name="d_colors" placeholder="e.g., #1a3d5c, #00b4d8, #d4a843">
+              <p class="hint">Not sure? Find one at <a href="https://www.canva.com/colors/color-palettes/" target="_blank" rel="noopener">canva.com/colors/color-palettes</a></p>
+            </div>
+
+            <div class="form-group">
+              <label for="d-font">Do you have a font preference?</label>
+              <input type="text" id="d-font" name="d_font" placeholder="e.g., Modern, Traditional, Clean sans-serif, etc.">
+            </div>
+
+            <div class="form-group">
+              <label for="d-inspiration">Do you have a look-a-like site for inspiration?</label>
+              <input type="text" id="d-inspiration" name="d_inspiration" placeholder="Paste URL of a website you like the look of">
+            </div>
+
+            <!-- SECTION: Content & Goals -->
+            <div class="form-section-title">Content &amp; Goals</div>
+
+            <div class="form-group">
+              <label>What is the last thing you want a visitor to do after going to your site? *</label>
+              <div class="checkbox-group" style="flex-direction:column;">
+                <label><input type="checkbox" name="d_cta[]" value="call"> Call Us</label>
+                <label><input type="checkbox" name="d_cta[]" value="application"> Fill out an application</label>
+                <label><input type="checkbox" name="d_cta[]" value="contact"> Fill out a contact form</label>
+                <label><input type="checkbox" name="d_cta[]" value="appointment"> Book an appointment</label>
+                <label><input type="checkbox" name="d_cta[]" value="info"> Request more information</label>
+                <label><input type="checkbox" name="d_cta[]" value="product"> Buy a product</label>
+                <label><input type="checkbox" name="d_cta[]" value="service"> Buy a service</label>
+                <label><input type="checkbox" name="d_cta[]" value="other"> Other</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="d-cta-other">If "Other," please describe:</label>
+              <input type="text" id="d-cta-other" name="d_cta_other" placeholder="What action should visitors take?">
+            </div>
+
+            <div class="form-group">
+              <label for="d-pages">List your desired pages and links to content</label>
+              <textarea id="d-pages" name="d_pages" rows="4" placeholder="e.g., Home, About, Services, Loan Programs, Rates, Testimonials, Blog, Contact&#10;&#10;Include links to any existing content you want us to use."></textarea>
+              <p class="hint">If unsure, we'll create a standard set of pages optimized for mortgage websites</p>
+            </div>
+
+            <!-- SECTION: Social & Integrations -->
+            <div class="form-section-title">Social Media &amp; Integrations</div>
+
+            <div class="form-group">
+              <label for="d-social">What social media platforms are you on? Include URLs.</label>
+              <textarea id="d-social" name="d_social" rows="4" placeholder="Facebook: https://facebook.com/...&#10;LinkedIn: https://linkedin.com/in/...&#10;Instagram: https://instagram.com/...&#10;YouTube: https://youtube.com/..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="d-crm">Do you have any third-party applications or CRMs? If so, what are they?</label>
+              <textarea id="d-crm" name="d_crm" rows="3" placeholder="e.g., Encompass, Velocify, BNTouch, Surefire, etc."></textarea>
+            </div>
+
+            <!-- SECTION: Add-Ons -->
+            <div class="form-section-title">Add-Ons</div>
+
+            <div class="form-group">
+              <label>Would you like to add AI Marketing Tools? ($39/mo)</label>
+              <div class="radio-group">
+                <label><input type="radio" name="d_ai_marketing" value="yes"> Yes, add it</label>
+                <label><input type="radio" name="d_ai_marketing" value="no"> Not right now</label>
+                <label><input type="radio" name="d_ai_marketing" value="info"> Tell me more first</label>
+              </div>
+              <p class="hint">Includes AI blog posts, email campaigns, and social media content</p>
+            </div>
+
+            <!-- SECTION: Final -->
+            <div class="form-section-title">Anything Else?</div>
+
+            <div class="form-group">
+              <label for="d-anything">Anything else we need to know?</label>
+              <textarea id="d-anything" name="d_anything" rows="4" placeholder="Special requests, deadlines, preferences, questions — whatever's on your mind."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Submit &amp; Get Started — $450 &rarr;</button>
+            <p style="text-align:center;margin-top:.75rem;font-size:.85rem;color:var(--text-light);">We'll send you an invoice after reviewing your submission. No payment required now.</p>
+          </div>
+
+        </div><!-- /form-fields -->
+
+        <!-- SUCCESS MESSAGE -->
+        <div class="form-success">
+          <div class="checkmark">&#x2713;</div>
+          <h2>You're All Set!</h2>
+          <p class="text-light" style="margin-top:.75rem;max-width:500px;margin-left:auto;margin-right:auto;">Thank you for choosing MLO Websites. We've received your information and will be in touch within one business day with next steps and your invoice.</p>
+          <div style="background:var(--bg-alt);border-radius:var(--radius);padding:1.5rem;max-width:500px;margin:2rem auto 0;text-align:left;">
+            <h4>What happens next?</h4>
+            <ul style="margin-top:.75rem;">
+              <li style="padding:.35rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">1.</span> We review your submission</li>
+              <li style="padding:.35rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">2.</span> You receive an invoice via email</li>
+              <li style="padding:.35rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">3.</span> Upon payment, we start building</li>
+              <li style="padding:.35rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">4.</span> Your site is live in 3–5 business days</li>
+            </ul>
+          </div>
+          <a href="index.html" class="btn btn-primary" style="margin-top:2rem;">Back to Home</a>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo"><div class="logo-icon">M</div>MLO<span>Websites</span></a><p>AI-powered, compliant websites built specifically for mortgage loan officers.</p></div>
+        <div class="footer-col"><h4>Product</h4><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="ai-marketing.html">AI Marketing</a><a href="how-it-works.html">How It Works</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="get-started.html">Get Started</a></div>
+        <div class="footer-col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 MLO Websites Powered by AI. All rights reserved.</p><div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

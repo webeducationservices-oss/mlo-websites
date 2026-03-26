@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mlo-site",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "/Users/justinbabcock/mlo-websites", "-l", "3456"],
+      "port": 3456
+    }
+  ]
+}
