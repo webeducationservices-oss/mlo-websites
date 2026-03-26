@@ -1,0 +1,11 @@
+# MLO Websites Powered by AI — robots.txt
+# https://mlositeai.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mlositeai.com/sitemap.xml
+
+# Crawl-delay (be polite)
+Crawl-delay: 1

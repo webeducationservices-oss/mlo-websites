@@ -1,0 +1,67 @@
+# MLO Websites Powered by AI
+# https://mlositeai.com
+# Contact: hello@mlowebsites.com
+
+> MLO Websites Powered by AI builds fast, compliant, SEO-optimized websites for mortgage loan officers. Powered by Claude AI, loan officers can manage their website by chatting with an AI assistant. Pricing starts at $450 for a custom website build and $50/month for hosting, maintenance, and AI-powered support.
+
+## Company Overview
+MLO Websites provides turnkey website solutions specifically designed for the mortgage industry. Every site is built with NMLS compliance, Equal Housing Opportunity disclosures, and all required regulatory elements included from day one.
+
+## Services
+
+### Website Build — $450 (one-time)
+- Custom design tailored to the loan officer's brand
+- NMLS and mortgage compliance built-in
+- SEO-optimized pages and structure
+- Mobile-responsive design
+- Lead capture forms and CTAs
+- Google Analytics integration
+- SSL certificate and domain setup
+- 3–5 business day turnaround
+
+### Hosting & Support — $50/month
+- Fast, reliable hosting with 99.9% uptime
+- AI-powered website edits via Claude (24/7)
+- SSL certificate and renewals
+- Daily backups and security monitoring
+- Performance optimization
+- Compliance updates as regulations change
+
+### AI Marketing Tools — $39/month (add-on)
+- AI-written blog posts auto-published to the website
+- Email marketing content delivered to the client's inbox
+- Social media posts ready to copy and paste
+- Mortgage-industry-specific topics and SEO optimization
+- Collaborative AI Writer for content refinement
+
+### Consulting — $95/hour
+- One-on-one human help for strategy, complex customizations, CRM integration, SEO deep-dives, and marketing strategy
+
+## How It Works
+1. Fill out the intake form (quick or detailed option)
+2. The team + AI builds a compliant, optimized website
+3. Review and approve (typically 0–1 revision rounds)
+4. Site goes live in 3–5 business days
+5. Make ongoing changes by chatting with Claude AI — no coding needed
+
+## Key Features
+- Powered by Anthropic's Claude AI for website management
+- Full NMLS compliance (disclosures, licensing, Equal Housing Opportunity)
+- Lightning-fast performance (95+ PageSpeed scores)
+- SEO optimization (structured data, meta tags, sitemaps, clean URLs)
+- Mobile-first responsive design
+- Lead capture forms with CRM integration
+- Google Analytics integration
+- SSL security and daily backups
+
+## Pages on This Site
+- Home: https://mlositeai.com/
+- Features: https://mlositeai.com/features
+- Pricing: https://mlositeai.com/pricing
+- How It Works: https://mlositeai.com/how-it-works
+- AI Marketing Tools: https://mlositeai.com/ai-marketing
+- About: https://mlositeai.com/about
+- Contact: https://mlositeai.com/contact
+- Get Started: https://mlositeai.com/get-started
+- Privacy Policy: https://mlositeai.com/privacy
+- Terms of Service: https://mlositeai.com/terms
