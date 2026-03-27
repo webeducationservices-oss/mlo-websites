@@ -4,7 +4,7 @@
     {
       "name": "mlo-site",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "/Users/justinbabcock/mlo-websites", "-l", "3456"],
+      "runtimeArgs": ["serve", "/Users/justinbabcock/Desktop/Websites/mlo-websites", "-l", "3456"],
       "port": 3456
     }
   ]

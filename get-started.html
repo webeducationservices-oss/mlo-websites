@@ -51,8 +51,8 @@
 
   <section class="page-header">
     <div class="container">
-      <h1>Get Started</h1>
-      <p>Choose your path — quick &amp; easy or fully customized. Either way, we'll build you a great website.</p>
+      <h1>Let's Build Your Website</h1>
+      <p>You're about to stand out from every other loan officer in your market. This takes just a few minutes.</p>
     </div>
   </section>
 
@@ -67,381 +67,498 @@
           <!-- TAB SWITCHER -->
           <div class="form-tabs">
             <button type="button" class="form-tab active" data-tab="quick-form">
-              <strong>Option 1:</strong> I'm Not Picky — Just Get It Going
+              <strong>Quick Start</strong> &mdash; Just the essentials
             </button>
             <button type="button" class="form-tab" data-tab="detailed-form">
-              <strong>Option 2:</strong> Ask Me Questions — I Want It My Way
+              <strong>Custom Build</strong> &mdash; I want it my way
             </button>
           </div>
 
           <!-- ======================================== -->
-          <!-- OPTION 1: QUICK FORM                     -->
+          <!-- OPTION 1: QUICK FORM (3 Steps)           -->
           <!-- ======================================== -->
           <div id="quick-form" class="form-panel active">
 
-            <div style="background:rgba(0,180,216,.06);border:1px solid rgba(0,180,216,.2);border-radius:var(--radius);padding:1.25rem;margin-bottom:2rem;">
-              <p style="margin-bottom:0;font-size:.95rem;"><strong>The fast track.</strong> Answer just the essentials and we'll handle the rest with smart, professional defaults. You can always refine later with our AI assistant.</p>
+            <!-- Progress Bar -->
+            <div class="wizard-progress" data-steps="3">
+              <div class="wizard-progress-bar" style="width:33.33%"></div>
+              <div class="wizard-steps">
+                <div class="wizard-step active" data-step="1"><span class="wizard-step-num">1</span><span class="wizard-step-label">About You</span></div>
+                <div class="wizard-step" data-step="2"><span class="wizard-step-num">2</span><span class="wizard-step-label">Compliance</span></div>
+                <div class="wizard-step" data-step="3"><span class="wizard-step-num">3</span><span class="wizard-step-label">Your Website</span></div>
+              </div>
             </div>
 
-            <div class="form-section-title">Contact &amp; Business Information</div>
+            <!-- STEP 1: About You -->
+            <div class="wizard-panel active" data-step="1">
+              <div class="step-intro">
+                <h2>First, tell us about you</h2>
+                <p>Great websites start with great people. Let's get to know the person behind the business.</p>
+              </div>
 
-            <div class="form-row">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="q-first">First Name *</label>
+                  <input type="text" id="q-first" name="first_name" required>
+                </div>
+                <div class="form-group">
+                  <label for="q-last">Last Name *</label>
+                  <input type="text" id="q-last" name="last_name" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="q-email">Email Address *</label>
+                  <input type="email" id="q-email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="q-phone">Phone Number *</label>
+                  <input type="tel" id="q-phone" name="phone" required>
+                </div>
+              </div>
+
               <div class="form-group">
-                <label for="q-first">First Name *</label>
-                <input type="text" id="q-first" name="first_name" required>
+                <label for="q-business">Business Name *</label>
+                <input type="text" id="q-business" name="business_name" required placeholder="As you want it to appear on your website">
               </div>
+
               <div class="form-group">
-                <label for="q-last">Last Name *</label>
-                <input type="text" id="q-last" name="last_name" required>
+                <label for="q-address">Business Address *</label>
+                <input type="text" id="q-address" name="business_address" required placeholder="Full address as displayed on your website">
+              </div>
+
+              <div class="wizard-nav">
+                <div></div>
+                <button type="button" class="btn btn-primary wizard-next">Continue &rarr;</button>
               </div>
             </div>
 
-            <div class="form-row">
+            <!-- STEP 2: Compliance -->
+            <div class="wizard-panel" data-step="2">
+              <div class="step-intro">
+                <h2>Compliance info (the important stuff)</h2>
+                <p>This keeps your website legally compliant from day one &mdash; so you can focus on closing loans, not worrying about regulations.</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="q-nmls">NMLS ID # *</label>
+                  <input type="text" id="q-nmls" name="nmls_id" required placeholder="Your individual NMLS number">
+                </div>
+                <div class="form-group">
+                  <label for="q-company-nmls">Company NMLS ID #</label>
+                  <input type="text" id="q-company-nmls" name="company_nmls_id" placeholder="If different from individual">
+                </div>
+              </div>
+
               <div class="form-group">
-                <label for="q-email">Email Address *</label>
-                <input type="email" id="q-email" name="email" required>
+                <label for="q-states">Licensed States *</label>
+                <input type="text" id="q-states" name="licensed_states" required placeholder="e.g., CA, TX, FL, NY">
+                <p class="hint">List all states you are licensed to operate in</p>
               </div>
+
               <div class="form-group">
-                <label for="q-phone">Phone Number *</label>
-                <input type="tel" id="q-phone" name="phone" required>
+                <label for="q-company">Company / Employer Name *</label>
+                <input type="text" id="q-company" name="company_name" required placeholder="Your brokerage or lending company name">
+              </div>
+
+              <div class="step-encouragement">
+                <span class="encouragement-icon">&#x1F3AF;</span>
+                <p><strong>You're halfway there!</strong> Most loan officers never build a professional website. You're already ahead of the pack.</p>
+              </div>
+
+              <div class="wizard-nav">
+                <button type="button" class="btn btn-outline wizard-prev">&larr; Back</button>
+                <button type="button" class="btn btn-primary wizard-next">Continue &rarr;</button>
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="q-business">Business Name *</label>
-              <input type="text" id="q-business" name="business_name" required placeholder="As you want it to appear on your website">
-            </div>
+            <!-- STEP 3: Your Website -->
+            <div class="wizard-panel" data-step="3">
+              <div class="step-intro">
+                <h2>Now let's set up your website</h2>
+                <p>This is where it gets exciting. Your clients are about to see you in a whole new light.</p>
+              </div>
 
-            <div class="form-group">
-              <label for="q-address">Business Address *</label>
-              <input type="text" id="q-address" name="business_address" required placeholder="Full address as displayed on your website">
-            </div>
-
-            <div class="form-section-title">Compliance Information</div>
-
-            <div class="form-row">
               <div class="form-group">
-                <label for="q-nmls">NMLS ID # *</label>
-                <input type="text" id="q-nmls" name="nmls_id" required placeholder="Your individual NMLS number">
+                <label>Do you have a domain? *</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="has_domain" value="yes"> Yes</label>
+                  <label><input type="radio" name="has_domain" value="no"> No &mdash; help me get one</label>
+                </div>
               </div>
+
               <div class="form-group">
-                <label for="q-company-nmls">Company NMLS ID #</label>
-                <input type="text" id="q-company-nmls" name="company_nmls_id" placeholder="If different from individual">
+                <label for="q-domain">Domain Name (or desired domain)</label>
+                <input type="text" id="q-domain" name="domain" placeholder="e.g., www.yourname.com">
               </div>
-            </div>
 
-            <div class="form-group">
-              <label for="q-states">Licensed States *</label>
-              <input type="text" id="q-states" name="licensed_states" required placeholder="e.g., CA, TX, FL, NY">
-              <p class="hint">List all states you are licensed to operate in</p>
-            </div>
-
-            <div class="form-group">
-              <label for="q-company">Company / Employer Name *</label>
-              <input type="text" id="q-company" name="company_name" required placeholder="Your brokerage or lending company name">
-            </div>
-
-            <div class="form-section-title">Website Basics</div>
-
-            <div class="form-group">
-              <label>Do you have a domain? *</label>
-              <div class="radio-group">
-                <label><input type="radio" name="has_domain" value="yes"> Yes</label>
-                <label><input type="radio" name="has_domain" value="no"> No — help me get one</label>
+              <div class="form-group">
+                <label>Do you have a logo?</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="has_logo_q" value="yes"> Yes</label>
+                  <label><input type="radio" name="has_logo_q" value="no"> No &mdash; use my name as text</label>
+                </div>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label for="q-domain">Domain Name (or desired domain)</label>
-              <input type="text" id="q-domain" name="domain" placeholder="e.g., www.yourname.com">
-            </div>
-
-            <div class="form-group">
-              <label>Do you have a logo?</label>
-              <div class="radio-group">
-                <label><input type="radio" name="has_logo_q" value="yes"> Yes</label>
-                <label><input type="radio" name="has_logo_q" value="no"> No — use my name as text</label>
+              <div class="form-group">
+                <label>Upload your logo (if you have one)</label>
+                <div class="file-upload">
+                  <input type="file" id="q-logo" name="logo" accept="image/*">
+                  <label for="q-logo">Click to upload or drag &amp; drop</label>
+                  <p class="file-name" style="margin-top:.5rem;font-size:.85rem;color:var(--text-light);"></p>
+                </div>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label>Upload your logo (if you have one)</label>
-              <div class="file-upload">
-                <input type="file" id="q-logo" name="logo" accept="image/*">
-                <label for="q-logo">Click to upload or drag &amp; drop</label>
-                <p class="file-name" style="margin-top:.5rem;font-size:.85rem;color:var(--text-light);"></p>
+              <div class="form-group">
+                <label>Would you like to add AI Marketing Tools? ($39/mo)</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="ai_marketing_q" value="yes"> Yes, add it</label>
+                  <label><input type="radio" name="ai_marketing_q" value="no"> Not right now</label>
+                  <label><input type="radio" name="ai_marketing_q" value="info"> Tell me more first</label>
+                </div>
+                <p class="hint">AI-generated blog posts, social content, and email campaigns that bring borrowers to you</p>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label>Would you like to add AI Marketing Tools? ($39/mo)</label>
-              <div class="radio-group">
-                <label><input type="radio" name="ai_marketing_q" value="yes"> Yes, add it</label>
-                <label><input type="radio" name="ai_marketing_q" value="no"> Not right now</label>
-                <label><input type="radio" name="ai_marketing_q" value="info"> Tell me more first</label>
+              <div class="form-group">
+                <label for="q-anything">Anything else we should know?</label>
+                <textarea id="q-anything" name="notes" rows="3" placeholder="Optional — any special requests or details"></textarea>
               </div>
+
+              <div class="step-encouragement" style="background:rgba(39,174,96,.06);border-color:rgba(39,174,96,.2);">
+                <span class="encouragement-icon">&#x1F680;</span>
+                <p><strong>You're about to look like a top producer.</strong> A professional website builds instant trust with borrowers and referral partners. Ready to launch?</p>
+              </div>
+
+              <div class="wizard-nav">
+                <button type="button" class="btn btn-outline wizard-prev">&larr; Back</button>
+                <button type="submit" class="btn btn-primary btn-lg" style="flex:1;justify-content:center;">Submit &amp; Get Started &rarr;</button>
+              </div>
+              <p style="text-align:center;margin-top:.75rem;font-size:.85rem;color:var(--text-light);">We'll send you an invoice after reviewing your submission. No payment required now.</p>
             </div>
 
-            <div class="form-group">
-              <label for="q-anything">Anything else we should know?</label>
-              <textarea id="q-anything" name="notes" rows="3" placeholder="Optional — any special requests or details"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Submit &amp; Get Started — $450 &rarr;</button>
-            <p style="text-align:center;margin-top:.75rem;font-size:.85rem;color:var(--text-light);">We'll send you an invoice after reviewing your submission. No payment required now.</p>
           </div>
 
           <!-- ======================================== -->
-          <!-- OPTION 2: DETAILED FORM                  -->
+          <!-- OPTION 2: DETAILED FORM (5 Steps)        -->
           <!-- ======================================== -->
           <div id="detailed-form" class="form-panel">
 
-            <div style="background:rgba(212,168,67,.06);border:1px solid rgba(212,168,67,.25);border-radius:var(--radius);padding:1.25rem;margin-bottom:2rem;">
-              <p style="margin-bottom:0;font-size:.95rem;"><strong>The custom route.</strong> The more you tell us, the more personalized your website will be. Take your time — you can save and come back.</p>
+            <!-- Progress Bar -->
+            <div class="wizard-progress" data-steps="5">
+              <div class="wizard-progress-bar" style="width:20%"></div>
+              <div class="wizard-steps">
+                <div class="wizard-step active" data-step="1"><span class="wizard-step-num">1</span><span class="wizard-step-label">About You</span></div>
+                <div class="wizard-step" data-step="2"><span class="wizard-step-num">2</span><span class="wizard-step-label">Compliance</span></div>
+                <div class="wizard-step" data-step="3"><span class="wizard-step-num">3</span><span class="wizard-step-label">Technical</span></div>
+                <div class="wizard-step" data-step="4"><span class="wizard-step-num">4</span><span class="wizard-step-label">Branding</span></div>
+                <div class="wizard-step" data-step="5"><span class="wizard-step-num">5</span><span class="wizard-step-label">Finishing Up</span></div>
+              </div>
             </div>
 
-            <!-- SECTION: Contact & Business -->
-            <div class="form-section-title">Contact &amp; Business Information</div>
+            <!-- STEP 1: About You & Business -->
+            <div class="wizard-panel active" data-step="1">
+              <div class="step-intro">
+                <h2>Let's start with the basics</h2>
+                <p>Tell us about yourself and your business. This is the foundation of a website that makes borrowers say <em>"I want to work with this person."</em></p>
+              </div>
 
-            <div class="form-row">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="d-first">First Name *</label>
+                  <input type="text" id="d-first" name="d_first_name" required>
+                </div>
+                <div class="form-group">
+                  <label for="d-last">Last Name *</label>
+                  <input type="text" id="d-last" name="d_last_name" required>
+                </div>
+              </div>
+
               <div class="form-group">
-                <label for="d-first">First Name *</label>
-                <input type="text" id="d-first" name="d_first_name" required>
+                <label for="d-business">Business Name *</label>
+                <input type="text" id="d-business" name="d_business_name" required placeholder="As you want it to appear on your website">
               </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="d-email">Business Email *</label>
+                  <input type="email" id="d-email" name="d_email" required placeholder="As displayed on your website">
+                </div>
+                <div class="form-group">
+                  <label for="d-phone">Business Phone *</label>
+                  <input type="tel" id="d-phone" name="d_phone" required>
+                </div>
+              </div>
+
               <div class="form-group">
-                <label for="d-last">Last Name *</label>
-                <input type="text" id="d-last" name="d_last_name" required>
+                <label for="d-address">Business Address *</label>
+                <input type="text" id="d-address" name="d_address" required placeholder="As displayed on your website">
               </div>
-            </div>
 
-            <div class="form-group">
-              <label for="d-business">Business Name *</label>
-              <input type="text" id="d-business" name="d_business_name" required placeholder="As you want it to appear on your website">
-            </div>
-
-            <div class="form-group">
-              <label for="d-email">Business Email *</label>
-              <input type="email" id="d-email" name="d_email" required placeholder="As you want it displayed on your website">
-            </div>
-
-            <div class="form-group">
-              <label for="d-address">Business Address *</label>
-              <input type="text" id="d-address" name="d_address" required placeholder="As you want it displayed on your website">
-            </div>
-
-            <div class="form-group">
-              <label for="d-phone">Business Phone Number *</label>
-              <input type="tel" id="d-phone" name="d_phone" required placeholder="As you want it displayed on your website">
-            </div>
-
-            <div class="form-group">
-              <label for="d-industry">How would you describe your industry? *</label>
-              <input type="text" id="d-industry" name="d_industry" required placeholder="e.g., Residential Mortgage Lending, Mortgage Brokerage, etc.">
-            </div>
-
-            <div class="form-group">
-              <label for="d-tagline">What is your business tagline?</label>
-              <input type="text" id="d-tagline" name="d_tagline" placeholder="e.g., 'Your Home Loan Partner' or 'Making Homeownership Possible'">
-            </div>
-
-            <div class="form-group">
-              <label for="d-description">Write a short paragraph or two describing your business *</label>
-              <textarea id="d-description" name="d_description" rows="5" required placeholder="Tell us about your business, what makes you different, and what clients can expect when working with you..."></textarea>
-            </div>
-
-            <div class="form-group">
-              <label for="d-associations">What associations are you a member of?</label>
-              <input type="text" id="d-associations" name="d_associations" placeholder="e.g., MBA, NAMB, local Realtor associations, etc.">
-            </div>
-
-            <div class="form-group">
-              <label for="d-holidays">What holidays are you closed?</label>
-              <input type="text" id="d-holidays" name="d_holidays" placeholder="e.g., Major federal holidays, Christmas week, etc.">
-            </div>
-
-            <!-- SECTION: Compliance -->
-            <div class="form-section-title">Compliance Information</div>
-
-            <div class="form-row">
               <div class="form-group">
-                <label for="d-nmls">Individual NMLS ID # *</label>
-                <input type="text" id="d-nmls" name="d_nmls_id" required>
+                <label for="d-industry">How would you describe your industry? *</label>
+                <input type="text" id="d-industry" name="d_industry" required placeholder="e.g., Residential Mortgage Lending, Mortgage Brokerage">
               </div>
+
               <div class="form-group">
-                <label for="d-company-nmls">Company NMLS ID #</label>
-                <input type="text" id="d-company-nmls" name="d_company_nmls_id" placeholder="If different from individual">
+                <label for="d-tagline">What is your business tagline?</label>
+                <input type="text" id="d-tagline" name="d_tagline" placeholder="e.g., 'Your Home Loan Partner' or 'Making Homeownership Possible'">
+              </div>
+
+              <div class="form-group">
+                <label for="d-description">Write a short paragraph describing your business *</label>
+                <textarea id="d-description" name="d_description" rows="4" required placeholder="What makes you different? What can clients expect when working with you?"></textarea>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="d-associations">Associations / memberships</label>
+                  <input type="text" id="d-associations" name="d_associations" placeholder="e.g., MBA, NAMB, local Realtor assoc.">
+                </div>
+                <div class="form-group">
+                  <label for="d-holidays">Holidays you're closed</label>
+                  <input type="text" id="d-holidays" name="d_holidays" placeholder="e.g., Major federal holidays">
+                </div>
+              </div>
+
+              <div class="wizard-nav">
+                <div></div>
+                <button type="button" class="btn btn-primary wizard-next">Continue &rarr;</button>
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="d-company">Company / Employer Name *</label>
-              <input type="text" id="d-company" name="d_company_name" required>
-            </div>
+            <!-- STEP 2: Compliance -->
+            <div class="wizard-panel" data-step="2">
+              <div class="step-intro">
+                <h2>Compliance details</h2>
+                <p>We build compliance into every page automatically. Just give us the essentials and we'll handle the rest &mdash; so your site is always audit-ready.</p>
+              </div>
 
-            <div class="form-group">
-              <label for="d-states">Licensed States *</label>
-              <input type="text" id="d-states" name="d_licensed_states" required placeholder="List all states you are licensed in">
-            </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="d-nmls">Individual NMLS ID # *</label>
+                  <input type="text" id="d-nmls" name="d_nmls_id" required>
+                </div>
+                <div class="form-group">
+                  <label for="d-company-nmls">Company NMLS ID #</label>
+                  <input type="text" id="d-company-nmls" name="d_company_nmls_id" placeholder="If different from individual">
+                </div>
+              </div>
 
-            <div class="form-group">
-              <label for="d-disclosures">Additional compliance disclosures or required text</label>
-              <textarea id="d-disclosures" name="d_disclosures" rows="3" placeholder="Any specific compliance language your company or state requires on your website"></textarea>
-            </div>
+              <div class="form-group">
+                <label for="d-company">Company / Employer Name *</label>
+                <input type="text" id="d-company" name="d_company_name" required>
+              </div>
 
-            <!-- SECTION: Domain & Technical -->
-            <div class="form-section-title">Domain &amp; Technical</div>
+              <div class="form-group">
+                <label for="d-states">Licensed States *</label>
+                <input type="text" id="d-states" name="d_licensed_states" required placeholder="List all states you are licensed in">
+              </div>
 
-            <div class="form-group">
-              <label>Do you have a domain? *</label>
-              <div class="radio-group">
-                <label><input type="radio" name="d_has_domain" value="yes"> Yes</label>
-                <label><input type="radio" name="d_has_domain" value="no"> No</label>
-                <label><input type="radio" name="d_has_domain" value="other"> Other</label>
+              <div class="form-group">
+                <label for="d-disclosures">Additional compliance disclosures</label>
+                <textarea id="d-disclosures" name="d_disclosures" rows="3" placeholder="Any specific compliance language your company or state requires"></textarea>
+              </div>
+
+              <div class="step-encouragement">
+                <span class="encouragement-icon">&#x2705;</span>
+                <p><strong>Compliance handled.</strong> While other LOs stress about regulations, your site will be built right from the start.</p>
+              </div>
+
+              <div class="wizard-nav">
+                <button type="button" class="btn btn-outline wizard-prev">&larr; Back</button>
+                <button type="button" class="btn btn-primary wizard-next">Continue &rarr;</button>
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="d-domain">What is your domain or desired domain?</label>
-              <input type="text" id="d-domain" name="d_domain" placeholder="e.g., www.yourname.com">
-            </div>
+            <!-- STEP 3: Domain & Technical -->
+            <div class="wizard-panel" data-step="3">
+              <div class="step-intro">
+                <h2>Domain &amp; technical setup</h2>
+                <p>Don't worry if you're not technical &mdash; we handle everything. Just tell us what you have and we'll take it from there.</p>
+              </div>
 
-            <div class="form-group">
-              <label>Do you have a live website currently?</label>
-              <div class="radio-group">
-                <label><input type="radio" name="d_has_site" value="yes"> Yes</label>
-                <label><input type="radio" name="d_has_site" value="no"> No</label>
+              <div class="form-group">
+                <label>Do you have a domain? *</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="d_has_domain" value="yes"> Yes</label>
+                  <label><input type="radio" name="d_has_domain" value="no"> No</label>
+                  <label><input type="radio" name="d_has_domain" value="other"> Not sure</label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="d-domain">Domain or desired domain</label>
+                <input type="text" id="d-domain" name="d_domain" placeholder="e.g., www.yourname.com">
+              </div>
+
+              <div class="form-group">
+                <label>Do you have a live website currently?</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="d_has_site" value="yes"> Yes</label>
+                  <label><input type="radio" name="d_has_site" value="no"> No</label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="d-current-site">Current website URL (if applicable)</label>
+                <input type="text" id="d-current-site" name="d_current_site" placeholder="https://...">
+              </div>
+
+              <div class="form-group">
+                <label for="d-registrar">Domain registrar</label>
+                <select id="d-registrar" name="d_registrar">
+                  <option value="">Select...</option>
+                  <option value="godaddy">GoDaddy</option>
+                  <option value="namecheap">Namecheap</option>
+                  <option value="google">Google Domains</option>
+                  <option value="cloudflare">Cloudflare</option>
+                  <option value="unknown">Not Sure</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="d-analytics">Google Analytics code</label>
+                <input type="text" id="d-analytics" name="d_analytics" placeholder="e.g., G-XXXXXXXXXX">
+                <p class="hint">Leave blank if you don't have one &mdash; we'll set it up for free</p>
+              </div>
+
+              <div class="form-group">
+                <label for="d-gmail">Gmail account for your business</label>
+                <input type="text" id="d-gmail" name="d_gmail" placeholder="e.g., yourname.loans@gmail.com">
+              </div>
+
+              <div class="step-encouragement">
+                <span class="encouragement-icon">&#x1F4BB;</span>
+                <p><strong>Nice work!</strong> You're more than halfway done. The fun part is next &mdash; making your site look amazing.</p>
+              </div>
+
+              <div class="wizard-nav">
+                <button type="button" class="btn btn-outline wizard-prev">&larr; Back</button>
+                <button type="button" class="btn btn-primary wizard-next">Continue &rarr;</button>
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="d-current-site">Current website URL (if applicable)</label>
-              <input type="text" id="d-current-site" name="d_current_site" placeholder="https://...">
-            </div>
+            <!-- STEP 4: Branding & Design -->
+            <div class="wizard-panel" data-step="4">
+              <div class="step-intro">
+                <h2>Make it yours</h2>
+                <p>This is where your personality comes through. A polished brand makes borrowers and realtors want to work with you before you even pick up the phone.</p>
+              </div>
 
-            <div class="form-group">
-              <label for="d-registrar">What is your registrar or desired registrar?</label>
-              <select id="d-registrar" name="d_registrar">
-                <option value="">Select...</option>
-                <option value="godaddy">GoDaddy</option>
-                <option value="namecheap">Namecheap</option>
-                <option value="google">Google Domains</option>
-                <option value="cloudflare">Cloudflare</option>
-                <option value="unknown">Unknown / Not Sure</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
+              <div class="form-group">
+                <label>Do you have a logo? *</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="d_has_logo" value="yes"> Yes</label>
+                  <label><input type="radio" name="d_has_logo" value="no"> No</label>
+                </div>
+              </div>
 
-            <div class="form-group">
-              <label for="d-analytics">What is your Google Analytics code?</label>
-              <input type="text" id="d-analytics" name="d_analytics" placeholder="e.g., G-XXXXXXXXXX or UA-XXXXXXX-X">
-              <p class="hint">Leave blank if you don't have one — we can help set it up</p>
-            </div>
+              <div class="form-group">
+                <label>Upload your logo</label>
+                <div class="file-upload">
+                  <input type="file" id="d-logo" name="d_logo" accept="image/*">
+                  <label for="d-logo">Click to upload or drag &amp; drop</label>
+                  <p class="file-name" style="margin-top:.5rem;font-size:.85rem;color:var(--text-light);"></p>
+                </div>
+              </div>
 
-            <div class="form-group">
-              <label for="d-gmail">What Gmail account would you like us to create?</label>
-              <input type="text" id="d-gmail" name="d_gmail" placeholder="e.g., yourname.loans@gmail.com">
-            </div>
+              <div class="form-group">
+                <label for="d-colors">Color palette (hex codes)</label>
+                <input type="text" id="d-colors" name="d_colors" placeholder="e.g., #1a3d5c, #00b4d8, #d4a843">
+                <p class="hint">Not sure? Browse <a href="https://www.canva.com/colors/color-palettes/" target="_blank" rel="noopener">canva.com/colors/color-palettes</a></p>
+              </div>
 
-            <!-- SECTION: Branding & Design -->
-            <div class="form-section-title">Branding &amp; Design Preferences</div>
+              <div class="form-group">
+                <label for="d-font">Font preference</label>
+                <input type="text" id="d-font" name="d_font" placeholder="e.g., Modern, Traditional, Clean sans-serif">
+              </div>
 
-            <div class="form-group">
-              <label>Do you have a logo? *</label>
-              <div class="radio-group">
-                <label><input type="radio" name="d_has_logo" value="yes"> Yes</label>
-                <label><input type="radio" name="d_has_logo" value="no"> No</label>
+              <div class="form-group">
+                <label for="d-inspiration">Website you like the look of</label>
+                <input type="text" id="d-inspiration" name="d_inspiration" placeholder="Paste a URL for design inspiration">
+              </div>
+
+              <div class="step-encouragement" style="background:rgba(212,168,67,.06);border-color:rgba(212,168,67,.25);">
+                <span class="encouragement-icon">&#x2728;</span>
+                <p><strong>Looking sharp!</strong> Just one more step and you'll be on your way to a website that turns visitors into clients.</p>
+              </div>
+
+              <div class="wizard-nav">
+                <button type="button" class="btn btn-outline wizard-prev">&larr; Back</button>
+                <button type="button" class="btn btn-primary wizard-next">Continue &rarr;</button>
               </div>
             </div>
 
-            <div class="form-group">
-              <label>Upload your logo</label>
-              <div class="file-upload">
-                <input type="file" id="d-logo" name="d_logo" accept="image/*">
-                <label for="d-logo">Click to upload or drag &amp; drop</label>
-                <p class="file-name" style="margin-top:.5rem;font-size:.85rem;color:var(--text-light);"></p>
+            <!-- STEP 5: Content, Social & Finish -->
+            <div class="wizard-panel" data-step="5">
+              <div class="step-intro">
+                <h2>Final details &mdash; you're almost there!</h2>
+                <p>Tell us what you want visitors to do, and we'll build every page to drive that action. More conversions = more closed loans.</p>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label for="d-colors">What is your hex code color palette?</label>
-              <input type="text" id="d-colors" name="d_colors" placeholder="e.g., #1a3d5c, #00b4d8, #d4a843">
-              <p class="hint">Not sure? Find one at <a href="https://www.canva.com/colors/color-palettes/" target="_blank" rel="noopener">canva.com/colors/color-palettes</a></p>
-            </div>
-
-            <div class="form-group">
-              <label for="d-font">Do you have a font preference?</label>
-              <input type="text" id="d-font" name="d_font" placeholder="e.g., Modern, Traditional, Clean sans-serif, etc.">
-            </div>
-
-            <div class="form-group">
-              <label for="d-inspiration">Do you have a look-a-like site for inspiration?</label>
-              <input type="text" id="d-inspiration" name="d_inspiration" placeholder="Paste URL of a website you like the look of">
-            </div>
-
-            <!-- SECTION: Content & Goals -->
-            <div class="form-section-title">Content &amp; Goals</div>
-
-            <div class="form-group">
-              <label>What is the last thing you want a visitor to do after going to your site? *</label>
-              <div class="checkbox-group" style="flex-direction:column;">
-                <label><input type="checkbox" name="d_cta[]" value="call"> Call Us</label>
-                <label><input type="checkbox" name="d_cta[]" value="application"> Fill out an application</label>
-                <label><input type="checkbox" name="d_cta[]" value="contact"> Fill out a contact form</label>
-                <label><input type="checkbox" name="d_cta[]" value="appointment"> Book an appointment</label>
-                <label><input type="checkbox" name="d_cta[]" value="info"> Request more information</label>
-                <label><input type="checkbox" name="d_cta[]" value="product"> Buy a product</label>
-                <label><input type="checkbox" name="d_cta[]" value="service"> Buy a service</label>
-                <label><input type="checkbox" name="d_cta[]" value="other"> Other</label>
+              <div class="form-group">
+                <label>What should visitors do on your site? *</label>
+                <div class="checkbox-group" style="flex-direction:column;">
+                  <label><input type="checkbox" name="d_cta[]" value="call"> Call you</label>
+                  <label><input type="checkbox" name="d_cta[]" value="application"> Fill out a loan application</label>
+                  <label><input type="checkbox" name="d_cta[]" value="contact"> Submit a contact form</label>
+                  <label><input type="checkbox" name="d_cta[]" value="appointment"> Book an appointment</label>
+                  <label><input type="checkbox" name="d_cta[]" value="info"> Request more information</label>
+                  <label><input type="checkbox" name="d_cta[]" value="other"> Other</label>
+                </div>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label for="d-cta-other">If "Other," please describe:</label>
-              <input type="text" id="d-cta-other" name="d_cta_other" placeholder="What action should visitors take?">
-            </div>
-
-            <div class="form-group">
-              <label for="d-pages">List your desired pages and links to content</label>
-              <textarea id="d-pages" name="d_pages" rows="4" placeholder="e.g., Home, About, Services, Loan Programs, Rates, Testimonials, Blog, Contact&#10;&#10;Include links to any existing content you want us to use."></textarea>
-              <p class="hint">If unsure, we'll create a standard set of pages optimized for mortgage websites</p>
-            </div>
-
-            <!-- SECTION: Social & Integrations -->
-            <div class="form-section-title">Social Media &amp; Integrations</div>
-
-            <div class="form-group">
-              <label for="d-social">What social media platforms are you on? Include URLs.</label>
-              <textarea id="d-social" name="d_social" rows="4" placeholder="Facebook: https://facebook.com/...&#10;LinkedIn: https://linkedin.com/in/...&#10;Instagram: https://instagram.com/...&#10;YouTube: https://youtube.com/..."></textarea>
-            </div>
-
-            <div class="form-group">
-              <label for="d-crm">Do you have any third-party applications or CRMs? If so, what are they?</label>
-              <textarea id="d-crm" name="d_crm" rows="3" placeholder="e.g., Encompass, Velocify, BNTouch, Surefire, etc."></textarea>
-            </div>
-
-            <!-- SECTION: Add-Ons -->
-            <div class="form-section-title">Add-Ons</div>
-
-            <div class="form-group">
-              <label>Would you like to add AI Marketing Tools? ($39/mo)</label>
-              <div class="radio-group">
-                <label><input type="radio" name="d_ai_marketing" value="yes"> Yes, add it</label>
-                <label><input type="radio" name="d_ai_marketing" value="no"> Not right now</label>
-                <label><input type="radio" name="d_ai_marketing" value="info"> Tell me more first</label>
+              <div class="form-group">
+                <label for="d-cta-other">If "Other," please describe:</label>
+                <input type="text" id="d-cta-other" name="d_cta_other" placeholder="What action should visitors take?">
               </div>
-              <p class="hint">Includes AI blog posts, email campaigns, and social media content</p>
+
+              <div class="form-group">
+                <label for="d-pages">Desired pages &amp; content links</label>
+                <textarea id="d-pages" name="d_pages" rows="3" placeholder="e.g., Home, About, Services, Loan Programs, Testimonials, Blog, Contact"></textarea>
+                <p class="hint">If unsure, we'll create a proven set of pages optimized for mortgage websites</p>
+              </div>
+
+              <div class="form-group">
+                <label for="d-social">Social media profiles (include URLs)</label>
+                <textarea id="d-social" name="d_social" rows="3" placeholder="Facebook: https://facebook.com/...&#10;LinkedIn: https://linkedin.com/in/...&#10;Instagram: https://instagram.com/..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="d-crm">Third-party apps or CRMs</label>
+                <textarea id="d-crm" name="d_crm" rows="2" placeholder="e.g., Encompass, Velocify, BNTouch, Surefire"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label>Add AI Marketing Tools? ($39/mo)</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="d_ai_marketing" value="yes"> Yes, add it</label>
+                  <label><input type="radio" name="d_ai_marketing" value="no"> Not right now</label>
+                  <label><input type="radio" name="d_ai_marketing" value="info"> Tell me more</label>
+                </div>
+                <p class="hint">AI blog posts, email campaigns, and social media content that bring borrowers to you</p>
+              </div>
+
+              <div class="form-group">
+                <label for="d-anything">Anything else?</label>
+                <textarea id="d-anything" name="d_anything" rows="3" placeholder="Special requests, deadlines, questions — whatever's on your mind"></textarea>
+              </div>
+
+              <div class="step-encouragement" style="background:rgba(39,174,96,.06);border-color:rgba(39,174,96,.2);">
+                <span class="encouragement-icon">&#x1F680;</span>
+                <p><strong>This is it!</strong> Hit submit and you're on your way to a professional online presence that builds trust, generates leads, and helps you close more loans.</p>
+              </div>
+
+              <div class="wizard-nav">
+                <button type="button" class="btn btn-outline wizard-prev">&larr; Back</button>
+                <button type="submit" class="btn btn-primary btn-lg" style="flex:1;justify-content:center;">Submit &amp; Get Started &rarr;</button>
+              </div>
+              <p style="text-align:center;margin-top:.75rem;font-size:.85rem;color:var(--text-light);">We'll send you an invoice after reviewing your submission. No payment required now.</p>
             </div>
 
-            <!-- SECTION: Final -->
-            <div class="form-section-title">Anything Else?</div>
-
-            <div class="form-group">
-              <label for="d-anything">Anything else we need to know?</label>
-              <textarea id="d-anything" name="d_anything" rows="4" placeholder="Special requests, deadlines, preferences, questions — whatever's on your mind."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Submit &amp; Get Started — $450 &rarr;</button>
-            <p style="text-align:center;margin-top:.75rem;font-size:.85rem;color:var(--text-light);">We'll send you an invoice after reviewing your submission. No payment required now.</p>
           </div>
 
         </div><!-- /form-fields -->
@@ -450,14 +567,14 @@
         <div class="form-success">
           <div class="checkmark">&#x2713;</div>
           <h2>You're All Set!</h2>
-          <p class="text-light" style="margin-top:.75rem;max-width:500px;margin-left:auto;margin-right:auto;">Thank you for choosing MLO Websites. We've received your information and will be in touch within one business day with next steps and your invoice.</p>
+          <p class="text-light" style="margin-top:.75rem;max-width:520px;margin-left:auto;margin-right:auto;">Congratulations &mdash; you just took the biggest step toward standing out in your market. We've received everything and will be in touch within one business day.</p>
           <div style="background:var(--bg-alt);border-radius:var(--radius);padding:1.5rem;max-width:500px;margin:2rem auto 0;text-align:left;">
             <h4>What happens next?</h4>
             <ul style="margin-top:.75rem;">
-              <li style="padding:.35rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">1.</span> We review your submission</li>
+              <li style="padding:.35rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">1.</span> We review your submission &amp; reach out with any questions</li>
               <li style="padding:.35rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">2.</span> You receive an invoice via email</li>
-              <li style="padding:.35rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">3.</span> Upon payment, we start building</li>
-              <li style="padding:.35rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">4.</span> Your site is live in 3–5 business days</li>
+              <li style="padding:.35rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">3.</span> Upon payment, we start building your site</li>
+              <li style="padding:.35rem 0;display:flex;gap:.5rem;font-size:.9rem;"><span style="color:var(--success);font-weight:700;">4.</span> Your professional website goes live in 3&ndash;5 business days</li>
             </ul>
           </div>
           <a href="index.html" class="btn btn-primary" style="margin-top:2rem;">Back to Home</a>

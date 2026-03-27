@@ -313,6 +313,12 @@ p  { margin-bottom: 1rem; }
 }
 .form-group textarea { resize: vertical; min-height: 100px; }
 .form-group .hint { font-size: .8rem; color: var(--text-light); margin-top: .3rem; }
+.form-group input.field-error,
+.form-group select.field-error,
+.form-group textarea.field-error {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231,76,60,.12);
+}
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .form-section-title {
   font-size: 1.1rem; font-weight: 700; color: var(--primary);
@@ -501,6 +507,95 @@ p  { margin-bottom: 1rem; }
 .file-upload:hover { border-color: var(--accent); }
 .file-upload input[type="file"] { display: none; }
 .file-upload label { cursor: pointer; color: var(--accent); font-weight: 600; }
+
+/* ---------- Multi-Step Wizard ---------- */
+.wizard-progress {
+  position: relative; margin-bottom: 2.5rem;
+  background: var(--bg-alt); border-radius: 50px;
+  height: 6px; overflow: hidden;
+}
+.wizard-progress-bar {
+  position: absolute; top: 0; left: 0; height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+  border-radius: 50px;
+  transition: width .4s ease;
+}
+.wizard-steps {
+  display: flex; justify-content: space-between;
+  position: relative; top: -3px;
+  margin-top: 0; padding: 0;
+}
+.wizard-step {
+  display: flex; flex-direction: column; align-items: center;
+  gap: .35rem; position: relative;
+}
+.wizard-step-num {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--bg-alt); border: 2px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .75rem; font-weight: 700; color: var(--text-light);
+  transition: all .3s ease;
+}
+.wizard-step.active .wizard-step-num,
+.wizard-step.completed .wizard-step-num {
+  background: var(--accent); border-color: var(--accent);
+  color: var(--white);
+}
+.wizard-step.completed .wizard-step-num {
+  background: var(--success); border-color: var(--success);
+}
+.wizard-step-label {
+  font-size: .7rem; font-weight: 600; color: var(--text-light);
+  text-transform: uppercase; letter-spacing: .5px;
+  white-space: nowrap;
+}
+.wizard-step.active .wizard-step-label { color: var(--accent); }
+.wizard-step.completed .wizard-step-label { color: var(--success); }
+
+.wizard-panel { display: none; animation: wizardFadeIn .35s ease; }
+.wizard-panel.active { display: block; }
+
+@keyframes wizardFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.wizard-nav {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 1rem; margin-top: 2rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.step-intro {
+  margin-bottom: 2rem;
+}
+.step-intro h2 {
+  font-size: 1.5rem; margin-bottom: .5rem;
+}
+.step-intro p {
+  color: var(--text-light); font-size: 1rem; margin-bottom: 0;
+}
+
+.step-encouragement {
+  background: rgba(0,180,216,.06); border: 1px solid rgba(0,180,216,.2);
+  border-radius: var(--radius); padding: 1.25rem;
+  margin-top: 1.5rem;
+  display: flex; align-items: flex-start; gap: .75rem;
+}
+.step-encouragement .encouragement-icon {
+  font-size: 1.5rem; flex-shrink: 0; line-height: 1;
+}
+.step-encouragement p {
+  margin-bottom: 0; font-size: .95rem;
+}
+
+@media (max-width: 768px) {
+  .wizard-step-label { font-size: .6rem; }
+  .wizard-step-num { width: 24px; height: 24px; font-size: .65rem; }
+  .wizard-nav { flex-direction: column; gap: .75rem; }
+  .wizard-nav .btn { width: 100%; justify-content: center; }
+  .step-encouragement { flex-direction: column; text-align: center; align-items: center; }
+}
 
 /* Success message */
 .form-success {
