@@ -168,16 +168,50 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---------- Form Submission (demo) ---------- */
+  /* ---------- Form Submission ---------- */
   document.querySelectorAll('form[data-ajax]').forEach(form => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      // Honeypot check — if filled, a bot submitted the form
+      if (form.querySelector('[name="_honey"]')?.value) return;
+
+      const btn = form.querySelector('[type="submit"]');
+      const originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      try {
+        // Get reCAPTCHA v3 token (invisible, no user interaction)
+        if (typeof grecaptcha !== 'undefined') {
+          try {
+            const token = await grecaptcha.execute('RECAPTCHA_SITE_KEY', { action: 'form_submit' });
+            const tokenField = form.querySelector('[name="recaptcha_token"]');
+            if (tokenField) tokenField.value = token;
+          } catch (recapErr) {
+            // reCAPTCHA not configured yet — continue without it
+          }
+        }
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        await fetch('https://myaieditor.com/api/form-notify', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+      } catch (err) {
+        // Still show success — the visitor shouldn't see an error
+        console.error('Form submit error:', err);
+      }
+
+      // Show thank you
+      const fields = form.querySelector('.form-fields');
       const success = form.querySelector('.form-success');
-      const fields  = form.querySelector('.form-fields');
-      if (success && fields) {
-        fields.style.display = 'none';
+      if (fields) fields.style.display = 'none';
+      if (success) {
         success.classList.add('show');
-        // Scroll to success message
         success.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });

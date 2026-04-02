@@ -621,10 +621,14 @@ p  { margin-bottom: 1rem; }
   display: none; text-align: center; padding: 3rem 2rem;
 }
 .form-success.show { display: block; }
-.form-success .checkmark {
-  width: 80px; height: 80px; border-radius: 50%;
+.form-success .checkmark,
+.form-success .success-icon {
+  width: 64px; height: 64px; border-radius: 50%;
   background: var(--success); color: var(--white);
   font-size: 2.5rem; display: inline-flex;
   align-items: center; justify-content: center;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1rem;
 }
+
+/* Hide reCAPTCHA badge (attribution text in footer per Google policy) */
+.grecaptcha-badge { visibility: hidden; }

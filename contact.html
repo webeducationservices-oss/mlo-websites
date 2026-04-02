@@ -26,6 +26,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <!-- reCAPTCHA v3 (invisible, score-based) — replace SITE_KEY once configured -->
+  <script src="https://www.google.com/recaptcha/api.js?render=RECAPTCHA_SITE_KEY"></script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -69,6 +71,8 @@
             <div class="form-fields">
               <input type="hidden" name="site_slug" value="mlo-websites">
               <input type="hidden" name="form_type" value="contact">
+              <input type="hidden" name="recaptcha_token" id="recaptcha_token_contact">
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
               <div class="form-row">
                 <div class="form-group">
                   <label for="c-first">First Name *</label>
@@ -110,7 +114,9 @@
             </div>
 
             <div class="form-success">
-              <div class="checkmark">&#x2713;</div>
+              <div class="success-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
               <h3>Message Sent!</h3>
               <p class="text-light" style="margin-top:.75rem;">Thanks for reaching out! We'll get back to you within one business day. In the meantime, feel free to check out how we can help you <a href="features.html" style="font-weight:600;">stand out from the competition</a>.</p>
               <a href="index.html" class="btn btn-primary" style="margin-top:1.5rem;">Back to Home</a>
@@ -208,6 +214,7 @@
       </div>
       <div class="footer-bottom"><p>&copy; 2026 <a href="https://webeducationservices.com" rel="nofollow">Powered by Web Education Services</a>. All rights reserved.</p><div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
       <div class="footer-compliance">MLO Websites follows industry best practices but is not a law firm or compliance consultancy. All website content and marketing materials should be reviewed and approved by your compliance officer or team. See our <a href="terms.html" style="color:rgba(255,255,255,.6);">Terms of Service</a> for full details.</div>
+      <div style="text-align:center;padding-top:.5rem;"><span style="font-size:11px;color:#999;">Protected by reCAPTCHA. <a href="https://policies.google.com/privacy" style="color:#999;">Privacy</a> · <a href="https://policies.google.com/terms" style="color:#999;">Terms</a></span></div>
     </div>
   </footer>
   <script src="js/main.js"></script>
