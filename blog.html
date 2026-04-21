@@ -62,24 +62,66 @@
 
   <section class="section">
     <div class="container">
-      <div class="blog-grid">
+      <!-- Category filters — driven by data-cat on each .post-card -->
+      <div class="blog-filters" id="blogFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Trust &amp; Credibility">Trust &amp; Credibility</button>
+        <button class="filter-btn" data-filter="AI &amp; Automation">AI &amp; Automation</button>
+        <button class="filter-btn" data-filter="Lead Generation">Lead Generation</button>
+        <button class="filter-btn" data-filter="Compliance">Compliance</button>
+        <button class="filter-btn" data-filter="Growth">Growth</button>
+      </div>
 
-        <!-- Post 1 -->
-        <a href="blog/why-your-website-builds-trust.html" class="blog-card animate-in">
-          <div class="blog-card-body">
-            <div class="blog-meta">
-              <span class="blog-date">April 7, 2026</span>
-              <span class="blog-tag">Trust &amp; Credibility</span>
-            </div>
-            <h2>Why a Professional Website Is the Fastest Way to Build Trust as a Loan Officer</h2>
-            <p>Borrowers Google you before they call you. Here's why a polished online presence closes more loans than any business card ever will.</p>
-            <span class="blog-read-more">Read Article &rarr;</span>
+      <!-- Post grid — new posts published via My AI Editor are injected at the top -->
+      <div id="postGrid" class="blog-grid post-grid">
+
+        <a href="blog/why-your-website-builds-trust" class="post-card" data-cat="Trust &amp; Credibility">
+          <div class="post-card-thumb">
+            <img src="/images/blog/why-your-website-builds-trust.jpg" alt="Why Your Website Builds Trust" loading="lazy">
+          </div>
+          <div class="post-card-body">
+            <div class="post-card-cat">Trust &amp; Credibility</div>
+            <div class="post-card-title">Why a Professional Website Is the Fastest Way to Build Trust as a Loan Officer</div>
+            <div class="post-card-meta">Apr 7, 2026</div>
           </div>
         </a>
 
       </div>
     </div>
   </section>
+
+  <style>
+    /* Post card template (matches the AI blog publisher) */
+    #postGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 2rem; }
+    .post-card { display: block; background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(26,61,92,0.08); border: 1px solid rgba(26,61,92,0.06); transition: transform 0.25s, box-shadow 0.25s; text-decoration: none; color: inherit; }
+    .post-card:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(26,61,92,0.15); }
+    .post-card-thumb { aspect-ratio: 16/9; overflow: hidden; background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); }
+    .post-card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .post-card-body { padding: 1.5rem; }
+    .post-card-cat { display: inline-block; background: rgba(0,180,216,0.12); color: var(--accent-dark); padding: 0.25rem 0.85rem; border-radius: 999px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .post-card-title { font-size: 1.15rem; font-weight: 700; color: var(--text); margin-bottom: 0.75rem; line-height: 1.35; font-family: 'Inter', sans-serif; }
+    .post-card-meta { font-size: 0.85rem; color: var(--text-light); }
+    .blog-filters { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--bg-alt); }
+    .filter-btn { background: var(--white); border: 1px solid rgba(26,61,92,0.15); color: var(--text-light); padding: 0.5rem 1rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+    .filter-btn:hover { color: var(--accent); border-color: var(--accent); }
+    .filter-btn.active { background: var(--primary); border-color: var(--primary); color: var(--white); }
+  </style>
+
+  <script>
+    (function(){
+      document.querySelectorAll('#blogFilters .filter-btn').forEach(function(btn){
+        btn.addEventListener('click', function(){
+          document.querySelectorAll('#blogFilters .filter-btn').forEach(function(b){ b.classList.remove('active'); });
+          btn.classList.add('active');
+          var filter = btn.getAttribute('data-filter');
+          document.querySelectorAll('#postGrid .post-card').forEach(function(card){
+            var cat = card.getAttribute('data-cat');
+            card.style.display = (filter === 'all' || cat === filter) ? '' : 'none';
+          });
+        });
+      });
+    })();
+  </script>
 
   <!-- CTA -->
   <section class="cta-banner">

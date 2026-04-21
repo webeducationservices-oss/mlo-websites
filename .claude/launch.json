@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "mlo-site",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "/Users/justinbabcock/Desktop/Websites/mlo-websites", "-l", "3456"],
+      "runtimeExecutable": "/usr/bin/python3",
+      "runtimeArgs": ["-m", "http.server", "3456", "-d", "/Users/justinbabcock/Desktop/Websites/mlo-websites"],
       "port": 3456
     }
   ]
