@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Get reCAPTCHA v3 token (invisible, no user interaction)
         if (typeof grecaptcha !== 'undefined') {
           try {
-            const token = await grecaptcha.execute('RECAPTCHA_SITE_KEY', { action: 'form_submit' });
+            const token = await grecaptcha.execute('6Lck8aQsAAAAALMA-T6nwfkSf7bv4K-mOhkszeKh', { action: 'form_submit' });
             const tokenField = form.querySelector('[name="recaptcha_token"]');
             if (tokenField) tokenField.value = token;
           } catch (recapErr) {
